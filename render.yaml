@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mammamia-mfp
+    runtime: docker
+    repo: https://github.com/bryanoberholzer00-bot/selfhost
+    branch: main
+    dockerfilePath: ./mammamia/Dockerfile
+    dockerContext: ./mammamia
+    envVars:
+      - key: TMDB_KEY
+        value: da_inserire
+      - key: PROXY
+        value: da_inserire
+      - key: FORWARDPROXY
+        value: da_inserire
