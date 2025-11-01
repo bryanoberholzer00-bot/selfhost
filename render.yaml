@@ -2,10 +2,8 @@ services:
   - type: web
     name: mammamia-mfp
     runtime: docker
-    repo: https://github.com/bryanoberholzer00-bot/selfhost
-    branch: main
     dockerfilePath: ./mammamia/Dockerfile
-    dockerContext: ./mammamia
+    rootDirectory: ./mammamia
     envVars:
       - key: TMDB_KEY
         value: da_inserire
